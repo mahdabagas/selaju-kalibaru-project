@@ -33,7 +33,8 @@ const Header = () => {
           </Link>
           <Link
             href="/"
-            className="rounded-md bg-gradient-to-r from-primary to-secondary bg-clip-text text-lg font-medium text-transparent text-white lg:text-2xl"
+            className="rounded-md bg-gradient-to-r from-primary to-secondary bg-clip-text text-lg font-medium text-white lg:text-2xl"
+            style={{ color: "transparent" }}
           >
             Selaju Kalibiru
           </Link>
@@ -57,7 +58,8 @@ const Header = () => {
                 <SheetClose asChild>
                   <Link
                     href="/"
-                    className="mb-4 rounded-md bg-gradient-to-r from-primary to-secondary bg-clip-text text-start text-lg font-medium text-transparent text-white lg:text-2xl"
+                    className="mb-4 rounded-md bg-gradient-to-r from-primary to-secondary bg-clip-text text-start text-lg font-medium text-white lg:text-2xl"
+                    style={{ color: "transparent" }}
                   >
                     Selaju Kalibiru
                   </Link>
