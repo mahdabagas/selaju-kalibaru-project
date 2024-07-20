@@ -10,11 +10,9 @@ import {
   SheetContent,
   SheetFooter,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Image from "next/image";
-import { Label } from "@/components/ui/label";
 
 const Header = () => {
   return (
@@ -36,7 +34,7 @@ const Header = () => {
             className="rounded-md bg-gradient-to-r from-primary to-secondary bg-clip-text text-lg font-medium text-white lg:text-2xl"
             style={{ color: "transparent" }}
           >
-            Selaju Kalibiru
+            Selaju Kalibaru
           </Link>
         </div>
         {/* link Desktop */}
@@ -51,7 +49,7 @@ const Header = () => {
         <div className="lg:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <RiMenu3Fill className="size-6 md:size-10" />
+              <RiMenu3Fill className="size-6 lg:size-10" />
             </SheetTrigger>
             <SheetContent className="bg-white text-primary" side="right">
               <SheetHeader>
@@ -61,7 +59,7 @@ const Header = () => {
                     className="mb-4 rounded-md bg-gradient-to-r from-primary to-secondary bg-clip-text text-start text-lg font-medium text-white lg:text-2xl"
                     style={{ color: "transparent" }}
                   >
-                    Selaju Kalibiru
+                    Selaju Kalibaru
                   </Link>
                 </SheetClose>
               </SheetHeader>
