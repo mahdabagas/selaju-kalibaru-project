@@ -16,7 +16,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <nav className="relative w-full">
+    <nav className="relative z-50 w-full">
       <div className="fixed inset-x-0 top-0 flex items-center justify-between bg-white px-6 py-4 text-primary drop-shadow-md md:px-12 lg:px-20">
         {/* Logo */}
         <div className="flex items-center gap-1">

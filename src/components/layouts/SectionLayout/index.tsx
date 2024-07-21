@@ -1,12 +1,15 @@
-import React, { FC } from "react";
+import React, { FC, ReactNode } from "react";
 
-interface SectionLayoutProps {}
+interface SectionLayoutProps {
+  children: ReactNode;
+  classname?: string;
+}
 
-const SectionLayout: FC<SectionLayoutProps> = ({}) => {
+const SectionLayout: FC<SectionLayoutProps> = ({ children, classname }) => {
   return (
-    <div>
-      <h1>Section Layout Props</h1>
-    </div>
+    <section className={`w-full px-6 pt-12 md:px-12 lg:px-20 ${classname}`}>
+      {children}
+    </section>
   );
 };
 
