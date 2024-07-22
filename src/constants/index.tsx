@@ -23,3 +23,8 @@ export const DATA_TOUR: tourType[] = [
     maps: "",
   },
 ];
+
+export const DATA_COFFE = [
+  { name: "Kopi Lanang Kalibaru", image: "/images/coffee-plant.jpg" },
+  { name: "Kopi Wine Kalibaru", image: "/images/coffee-plant.jpg" },
+];

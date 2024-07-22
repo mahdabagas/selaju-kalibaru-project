@@ -73,8 +73,8 @@ const CoffeeFestival = () => {
                   </Badge>
                 </div>
               </div>
-              <div className="flex pt-4">
-                <Button className="w-full rounded-xl lg:w-1/2 lg:text-lg">
+              <div className="flex justify-center pt-4">
+                <Button className="w-full rounded-full lg:w-1/2 lg:text-lg">
                   Selengkapnya <FiChevronRight />
                 </Button>
               </div>
@@ -82,13 +82,15 @@ const CoffeeFestival = () => {
           </div>
         </div>
         {/* Background Image */}
-        <Image
-          src="/images/hero-image-2.jpg"
-          alt="/images/hero-image-2.jpg"
-          width={600}
-          height={600}
-          className="absolute inset-0 h-full w-full object-cover object-bottom brightness-50"
-        />
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero-image.jpg"
+            alt="/images/hero-image.jpg"
+            width={600}
+            height={600}
+            className="h-full w-full object-cover object-bottom brightness-50"
+          />
+        </div>
       </div>
     </SectionLayout>
   );

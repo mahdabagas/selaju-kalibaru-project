@@ -35,13 +35,13 @@ const Hero = () => {
         </div>
       </div>
       {/* background image */}
-      <div className="relative -z-10 h-screen w-full brightness-90">
+      <div className="relative -z-10 h-screen w-full brightness-50">
         <Image
-          src="/images/hero-image.jpg"
+          src="/images/hero-image-2.jpg"
           alt="hero-image"
           width={800}
           height={600}
-          className="h-full w-full object-cover object-left lg:object-cover"
+          className="h-full w-full object-cover object-center lg:object-cover"
         />
       </div>
     </section>
