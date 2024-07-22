@@ -35,7 +35,7 @@ const Tour = () => {
               >
                 <Card className="group mx-auto h-full w-full cursor-pointer rounded-xl border-2 border-primary">
                   <CardHeader className="h-52 p-3 lg:h-64">
-                    <div className="overflow-hidden">
+                    <div className="h-full overflow-hidden">
                       <Image
                         src={item.image}
                         alt={item.image}

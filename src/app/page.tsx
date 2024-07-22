@@ -1,6 +1,6 @@
 import Hero from "@/components/organisms/Hero";
 import Tour from "@/components/organisms/Tour";
-import FestivalKopi from "./festival-kopi/page";
+import CoffeeFestival from "@/components/organisms/CoffeeFestival";
 import AboutKalibiru from "@/components/organisms/AboutKalibaru";
 import AboutCoffee from "@/components/organisms/AboutCoffe";
 
@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
       <AboutKalibiru />
       <Tour />
-      <FestivalKopi />
+      <CoffeeFestival />
       <AboutCoffee />
     </main>
   );
