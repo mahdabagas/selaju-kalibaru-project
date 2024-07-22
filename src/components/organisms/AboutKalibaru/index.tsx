@@ -6,11 +6,12 @@ import React from "react";
 const AboutKalibiru = () => {
   return (
     <SectionLayout>
-      {/* Title */}
-      <Title classname="text-center text-primary">Tentang Kalibaru</Title>
       {/* Content */}
       <div className="mt-6 flex-row-reverse items-start justify-between gap-16 md:flex lg:mt-8">
-        <div className="mx-auto p-2 md:w-1/2">
+        <Title classname="text-primary text-center md:text-start md:hidden">
+          Tentang Kalibaru
+        </Title>
+        <div className="mx-auto mt-4 p-2 md:mt-0 md:w-1/2">
           <Image
             src="/images/coffee-plant.jpg"
             alt="desa-kalibaru"
@@ -19,8 +20,11 @@ const AboutKalibiru = () => {
             className="h-full w-full rounded-lg object-cover object-center drop-shadow-lg"
           />
         </div>
-        <div className="mt-4 md:w-1/2">
-          <p className="text-justify lg:text-2xl">
+        <div className="mt-4 space-y-4 md:w-1/2">
+          <Title classname="text-primary text-center md:text-start hidden md:block">
+            Tentang Kalibaru
+          </Title>
+          <p className="text-center md:text-justify md:text-xs lg:text-lg">
             Kalibaru menjadi salah satu penghasil kopi terbesar di Kabupaten
             Bayuwangi dengan luas lahan kopi mencapai 3.2827 hektar yang
             tersebar di area Gunung Gumitir dan Gunung Raung dengan total
