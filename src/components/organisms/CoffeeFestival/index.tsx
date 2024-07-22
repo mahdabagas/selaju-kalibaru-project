@@ -18,7 +18,7 @@ const CoffeeFestival = () => {
         subtitle="Festival yang akan diadakan di Kecamatan Kalibaru"
       />
       {/* Content */}
-      <div className="relative mx-auto mt-4 overflow-hidden rounded-2xl drop-shadow-lg">
+      <div className="relative mx-auto mt-4 overflow-hidden rounded-2xl drop-shadow-xl">
         {/* Card */}
         <div className="relative z-10">
           <div className="flex flex-col justify-center gap-4 rounded-xl px-3 py-4 lg:flex-row lg:gap-6 lg:px-6 lg:py-8">

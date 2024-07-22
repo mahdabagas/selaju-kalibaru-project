@@ -5,20 +5,25 @@ import { Button } from "@/components/ui/button";
 import WordRotate from "@/components/magicui/word-rotate";
 import SparklesText from "@/components/magicui/sparkles-text";
 import { MdOutlineTravelExplore } from "react-icons/md";
+import SectionLayout from "@/components/layouts/SectionLayout";
+import TypingAnimation from "@/components/magicui/typing-animation";
 
 const Hero = () => {
   return (
     <section className="relative">
       {/* title */}
-      <div className="absolute left-8 right-8 top-1/2 -translate-y-1/2 md:left-14 lg:left-24">
-        <div className="space-y-2 font-medium text-white md:space-y-4">
-          <h1 className="text-2xl md:text-3xl">Selamat Datang!</h1>
+      <SectionLayout classname="relative h-screen flex items-center   to-none">
+        <div className="space-y-2 font-medium md:space-y-4">
+          <h1 className="text-2xl text-white md:text-4xl">
+            Selamat Datang! 👋
+          </h1>
           <SparklesText
-            text="Festival Kalibaru"
-            className="text-5xl md:text-7xl"
-            colors={{ first: "#00ABC1", second: "#00BE76" }}
+            text="Selaju Kalibaru"
+            className="text-start text-5xl text-border text-white drop-shadow-[0px_1px_4px_rgba(0,160,90,1)] md:text-7xl lg:text-8xl"
+            colors={{ first: "#00BE76", second: "#00BE76" }}
+            sparklesCount={15}
           />
-          <div className="h-14">
+          <div className="h-14 text-white">
             <WordRotate
               className="h-45 text-2xl md:text-4xl"
               words={[
@@ -29,19 +34,19 @@ const Hero = () => {
               duration={3000}
             />
           </div>
-          <Button className="space-x-2 rounded-full px-6 md:text-xl">
-            <MdOutlineTravelExplore /> <span>Jelajahi</span>
+          <Button className="space-x-2 rounded-full px-6 md:text-xl lg:px-10 lg:py-6 lg:text-2xl">
+            <span>Jelajahi</span> <MdOutlineTravelExplore />
           </Button>
         </div>
-      </div>
+      </SectionLayout>
       {/* background image */}
-      <div className="relative -z-10 h-screen w-full brightness-50">
+      <div className="absolute right-0 top-0 -z-10 h-screen w-full brightness-90">
         <Image
-          src="/images/hero-image-2.jpg"
+          src="/images/hero-image.jpg"
           alt="hero-image"
           width={800}
           height={600}
-          className="h-full w-full object-cover object-center lg:object-cover"
+          className="h-full w-full object-cover object-left"
         />
       </div>
     </section>

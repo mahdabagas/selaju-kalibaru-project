@@ -11,13 +11,13 @@ const AboutKalibiru = () => {
         <Title classname="text-primary text-center md:text-start md:hidden">
           Tentang Kalibaru
         </Title>
-        <div className="mx-auto mt-4 p-2 md:mt-0 md:w-1/2">
+        <div className="mx-auto mt-4 self-center drop-shadow-lg md:mt-0 md:w-1/2">
           <Image
-            src="/images/coffee-plant.jpg"
+            src="/images/hero-image-2.jpg"
             alt="desa-kalibaru"
             width={600}
             height={400}
-            className="h-full w-full rounded-lg object-cover object-center drop-shadow-lg"
+            className="h-full w-full rounded-2xl object-cover object-center"
           />
         </div>
         <div className="mt-4 space-y-4 md:w-1/2">

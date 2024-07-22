@@ -10,8 +10,8 @@ export default function Home() {
       <Hero />
       <AboutKalibiru />
       <Tour />
-      <CoffeeFestival />
       <AboutCoffee />
+      <CoffeeFestival />
     </main>
   );
 }

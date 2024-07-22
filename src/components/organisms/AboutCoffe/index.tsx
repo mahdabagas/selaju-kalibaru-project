@@ -11,16 +11,16 @@ const AboutCoffee = () => {
       {/* Title */}
       <TitleSection title="Kopi Kalibaru" subtitle="Cita rasa kopi kalibaru" />
       {/* Content */}
-      <div className="mx-auto mt-4 flex flex-col items-center justify-center gap-6 lg:mt-12 lg:flex-row">
+      <div className="mx-auto mt-4 flex flex-col items-center justify-center gap-6 lg:mt-20 lg:flex-row">
         <div className="h-full lg:w-1/2">
           <div className="flex h-full flex-row items-center gap-4 lg:flex-row">
             {DATA_COFFE.map((item: any, index: number) => (
               <div
                 key={index}
-                className={`relative h-44 w-full overflow-hidden rounded-lg border border-primary bg-white lg:h-64 ${
+                className={`relative mt-6 h-44 w-full overflow-hidden rounded-lg bg-white drop-shadow-lg md:mt-10 lg:mt-0 lg:h-64 ${
                   index === 0
-                    ? "lg:-top-6 lg:-rotate-[8deg]"
-                    : "lg:top-0 lg:rotate-[8deg]"
+                    ? "-top-6 left-2 -rotate-[8deg] lg:left-0"
+                    : "right-2 top-0 rotate-[8deg] lg:right-0"
                 }`}
               >
                 <Image
