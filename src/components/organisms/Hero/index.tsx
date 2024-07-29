@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section className="relative">
       {/* title */}
-      <SectionLayout classname="relative h-screen flex items-center   to-none">
+      <SectionLayout classname="relative h-[calc(100vh-4rem)] flex items-center">
         <div className="space-y-2 font-medium md:space-y-4">
           <h1 className="text-2xl text-white md:text-4xl">
             Selamat Datang! 👋
@@ -40,7 +40,7 @@ const Hero = () => {
         </div>
       </SectionLayout>
       {/* background image */}
-      <div className="absolute right-0 top-0 -z-10 h-screen w-full brightness-90">
+      <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 h-[calc(100vh-4rem)] w-full">
         <Image
           src="/images/hero-image.jpg"
           alt="hero-image"
