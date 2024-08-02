@@ -3,12 +3,14 @@ import React, { FC, ReactNode } from "react";
 interface SectionLayoutProps {
   children?: ReactNode;
   classname?: string;
+  id?: string;
 }
 
-const SectionLayout: FC<SectionLayoutProps> = ({ children, classname }) => {
+const SectionLayout: FC<SectionLayoutProps> = ({ children, classname, id }) => {
   return (
     <section
-      className={`w-full px-6 pb-6 pt-8 md:px-12 lg:px-20 lg:pb-10 lg:pt-14 ${classname}`}
+      id={id}
+      className={`w-full px-6 py-8 md:px-12 lg:px-20 lg:py-14 ${classname}`}
     >
       {children}
     </section>

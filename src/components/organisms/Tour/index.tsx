@@ -1,9 +1,10 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import Title from "@/components/atoms/Title";
 import SectionLayout from "@/components/layouts/SectionLayout";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -15,10 +16,12 @@ import { DATA_TOUR } from "@/constants";
 import { tourType } from "@/types";
 import { FiChevronRight } from "react-icons/fi";
 import TitleSection from "../TitleSection";
+import { useRouter } from "next/navigation";
 
 const Tour = () => {
+  const router = useRouter();
   return (
-    <SectionLayout>
+    <SectionLayout id="wisata" classname="bg-primary/5">
       {/* Title */}
       <TitleSection
         title="Wisata Kalibaru"
@@ -33,11 +36,14 @@ const Tour = () => {
                 key={item.name + index}
                 className="md:basis-1/2 lg:basis-1/3"
               >
-                <Card className="group mx-auto h-full w-full cursor-pointer rounded-xl border-2 border-primary">
+                <Card
+                  onClick={() => router.push(`/wisata/${item.key}`)}
+                  className="group mx-auto h-full w-full cursor-pointer rounded-xl border-2 border-primary"
+                >
                   <CardHeader className="h-52 p-3 lg:h-64">
                     <div className="h-full overflow-hidden">
                       <Image
-                        src={item.image}
+                        src={`/images/${item.image}`}
                         alt={item.image}
                         className="h-full w-full rounded-md object-cover object-center duration-200 group-hover:scale-110"
                         width={400}

@@ -1,14 +1,26 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-
 import { Button } from "@/components/ui/button";
 import WordRotate from "@/components/magicui/word-rotate";
 import SparklesText from "@/components/magicui/sparkles-text";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import SectionLayout from "@/components/layouts/SectionLayout";
-import TypingAnimation from "@/components/magicui/typing-animation";
+import useScreenSize from "@/hooks/UseScreenSize";
 
 const Hero = () => {
+  const screenSize = useScreenSize();
+
+  const clickExplore = () => {
+    if (screenSize.width > 0 && screenSize.width < 640) {
+      window.scrollTo(0, 600);
+    } else if (screenSize.width > 640 && screenSize.width < 840) {
+      window.scrollTo(0, 800);
+    } else {
+      window.scrollTo(0, 600);
+    }
+  };
   return (
     <section className="relative">
       {/* title */}
@@ -34,7 +46,10 @@ const Hero = () => {
               duration={3000}
             />
           </div>
-          <Button className="space-x-2 rounded-full px-6 md:text-xl lg:px-10 lg:py-6 lg:text-2xl">
+          <Button
+            className="space-x-2 rounded-full px-6 md:text-xl lg:px-10 lg:py-6 lg:text-2xl"
+            onClick={clickExplore}
+          >
             <span>Jelajahi</span> <MdOutlineTravelExplore />
           </Button>
         </div>

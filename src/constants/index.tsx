@@ -1,32 +1,51 @@
-import { tourType } from "@/types";
+import { coffeeTrailType, coffeeType, tourType } from "@/types";
 
 export const DATA_TOUR: tourType[] = [
   {
+    key: "terowongan",
     name: "Terowongan",
+    address: "Jl. Sidoluhur RT 03/ RW 02, Desa Dilem, Kecamatan Kepanjen",
+    price: "Rp. 20.000",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dicta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eligendi sint maxime.",
-    image: "/images/terowongan.jpg",
-    maps: "",
+    image: "terowongan.jpg",
+    maps: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15820.060020519395!2d111.2603008!3d-7.5733422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79f378243ffcbb%3A0x5df23940c4cba7e7!2sBumi%20perkemahan%20Gendingan!5e0!3m2!1sid!2sid!4v1690531899570!5m2!1sid!2sid",
   },
   {
+    key: "gunung-gumitir",
     name: "Gunung Gumitir",
+    address: "Jl. Sidoluhur RT 03/ RW 02, Desa Dilem, Kecamatan Kepanjen",
+    price: "Rp. 20.000",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dicta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eligendi sint maxime.",
-    image: "/images/gunung-gumitir.png",
-    maps: "",
+    image: "gunung-gumitir.png",
+    maps: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15820.060020519395!2d111.2603008!3d-7.5733422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79f378243ffcbb%3A0x5df23940c4cba7e7!2sBumi%20perkemahan%20Gendingan!5e0!3m2!1sid!2sid!4v1690531899570!5m2!1sid!2sid",
   },
   {
+    key: "malangsari",
     name: "Malangsari",
+    address: "Jl. Sidoluhur RT 03/ RW 02, Desa Dilem, Kecamatan Kepanjen",
+    price: "Rp. 20.000",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dicta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eligendi sint maxime.",
-    image: "/images/malangsari.jpg",
-    maps: "",
+    image: "malangsari.jpg",
+    maps: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15820.060020519395!2d111.2603008!3d-7.5733422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79f378243ffcbb%3A0x5df23940c4cba7e7!2sBumi%20perkemahan%20Gendingan!5e0!3m2!1sid!2sid!4v1690531899570!5m2!1sid!2sid",
   },
 ];
 
-export const DATA_COFFE = [
-  { name: "Kopi Lanang Kalibaru", image: "/images/coffee-plant.jpg" },
-  { name: "Kopi Wine Kalibaru", image: "/images/coffee-plant.jpg" },
+export const DATA_COFFE: coffeeType[] = [
+  {
+    name: "Kopi Lanang Kalibaru",
+    image: "/images/coffee-plant.jpg",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dicta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eligendi sint maxime.",
+  },
+  {
+    name: "Kopi Wine Kalibaru",
+    image: "/images/coffee-plant.jpg",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dicta Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eligendi sint maxime.",
+  },
 ];
 
 export const TIMELINE_FESTIVAL_KOPI = [
@@ -119,5 +138,68 @@ export const EVENT_FESTIVAL_KOPI = [
     ],
     price: "Mengirim sampel kopi (green bean) sebanyak 1 kg.",
     links: "bit.ly/DaftarLatteArt2024",
+  },
+];
+
+export const DATA_JEJAK_KOPI: coffeeTrailType[] = [
+  {
+    name: "Petik Merah",
+    description: "Panen buah kopi merah (red cherry)",
+    image: "coffee-plant.jpg",
+  },
+  {
+    name: "Sortasi Buah",
+    description: "Pemilahan buah sehat dan baik",
+    image: "coffee-plant.jpg",
+  },
+  {
+    name: "Penguapan I",
+    description: "Pemisahan biji dan daging buah",
+    image: "coffee-plant.jpg",
+  },
+  {
+    name: "Fermentasi",
+    description: "Penghilangan lapisan lendir dan pembentukan cita rasa",
+    image: "coffee-plant.jpg",
+  },
+  {
+    name: "Pencucian",
+    description: "Pembersihan biji kopi dari kotoran dan lendir",
+    image: "coffee-plant.jpg",
+  },
+  {
+    name: "Pengeringan",
+    description: "Penurunan kadar air dan biji kopi hingga 12%",
+    image: "coffee-plant.jpg",
+  },
+  {
+    name: "Penguapan II",
+    description: "Pemisahan biji dan kulit tanduk",
+    image: "coffee-plant.jpg",
+  },
+  {
+    name: "Sortasi Biji",
+    description: "Pemilahan biji kopi (greenbean) baik dan bernas",
+    image: "coffee-plant.jpg",
+  },
+  {
+    name: "Sangrai",
+    description: "Penggorengan kering untuk membentuk rasa dan aroma kopi",
+    image: "coffee-plant.jpg",
+  },
+  {
+    name: "Sortasi",
+    description: "Pemilahan biji bermutu tanpa cacat & Kotoran",
+    image: "coffee-plant.jpg",
+  },
+  {
+    name: "Penggilingan",
+    description: "Penghalusan biji menjadi Serbuk",
+    image: "coffee-plant.jpg",
+  },
+  {
+    name: "Penyajian",
+    description: "Beragam kenikmatan tercipta pada setiap metodenya",
+    image: "coffee-plant.jpg",
   },
 ];

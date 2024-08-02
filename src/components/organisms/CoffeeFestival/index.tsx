@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import SectionLayout from "@/components/layouts/SectionLayout";
 import TitleSection from "@/components/organisms/TitleSection";
@@ -8,10 +10,12 @@ import { BsCalendar3 } from "react-icons/bs";
 import { RiMapPinLine } from "react-icons/ri";
 import { FiChevronRight, FiTrello } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 const CoffeeFestival = () => {
+  const router = useRouter();
   return (
-    <SectionLayout>
+    <SectionLayout classname="bg-primary/5">
       {/* Title */}
       <TitleSection
         title="Festival"
@@ -74,7 +78,10 @@ const CoffeeFestival = () => {
                 </div>
               </div>
               <div className="flex justify-center pt-4">
-                <Button className="w-full rounded-full lg:w-1/2 lg:text-lg">
+                <Button
+                  className="w-full rounded-full lg:w-1/2 lg:text-lg"
+                  onClick={() => router.push("/festival-kopi")}
+                >
                   Selengkapnya <FiChevronRight />
                 </Button>
               </div>

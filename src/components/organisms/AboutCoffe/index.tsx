@@ -1,11 +1,15 @@
+"use client";
+
 import SectionLayout from "@/components/layouts/SectionLayout";
 import React from "react";
 import TitleSection from "../TitleSection";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { DATA_COFFE } from "@/constants";
+import { useRouter } from "next/navigation";
 
 const AboutCoffee = () => {
+  const router = useRouter();
   return (
     <SectionLayout>
       {/* Title */}
@@ -43,7 +47,12 @@ const AboutCoffee = () => {
             robusta, dan liberika. Robusta menjadi kopi yang paling banyak
             dibudidayakan oleh petani setempat&quot;
           </p>
-          <Button className="rounded-full">Telusuri Tentang Kopi</Button>
+          <Button
+            className="rounded-full"
+            onClick={() => router.push("/tentang-kopi")}
+          >
+            Telusuri Tentang Kopi
+          </Button>
         </div>
       </div>
     </SectionLayout>

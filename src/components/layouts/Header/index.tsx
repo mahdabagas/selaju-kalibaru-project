@@ -40,7 +40,7 @@ const Header = () => {
       <div className="hidden lg:block">
         <ul className="grid w-[30rem] grid-cols-3 place-items-end text-xl">
           <Link
-            href="/wisata/1"
+            href="/#wisata"
             className="transition duration-150 hover:underline"
           >
             Wisata
@@ -80,7 +80,7 @@ const Header = () => {
             <SheetFooter>
               <div className="flex w-full flex-col justify-start gap-3">
                 <SheetClose asChild>
-                  <Link href="/wisata/1">Wisata</Link>
+                  <Link href="/#wisata">Wisata</Link>
                 </SheetClose>
                 <SheetClose asChild>
                   <Link href="/festival-kopi">Festival Kopi</Link>
