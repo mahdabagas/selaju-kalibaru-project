@@ -10,7 +10,7 @@ const TitleSection: FC<TitleSectionProps> = ({ title, subtitle }) => {
   return (
     <>
       <Title classname="text-center text-primary">{title}</Title>
-      <p className="mt-1 text-center text-[0.875rem] text-slate-600 md:text-base">
+      <p className="mt-1 text-center text-[0.875rem] text-slate-600 md:text-base lg:text-lg">
         {subtitle}
       </p>
     </>

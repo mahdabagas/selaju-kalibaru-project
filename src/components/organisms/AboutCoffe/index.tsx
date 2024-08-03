@@ -28,11 +28,11 @@ const AboutCoffee = () => {
                 }`}
               >
                 <Image
-                  src={item.image}
+                  src={`/images/${item.image}`}
                   alt={item.image}
                   className="h-full w-full rounded-md object-cover object-center"
-                  width={400}
-                  height={400}
+                  width={600}
+                  height={600}
                 />
                 <p className="absolute bottom-0 left-0 right-0 flex items-center justify-center bg-white py-2 text-center text-xs font-medium text-primary md:text-base">
                   {item.name}

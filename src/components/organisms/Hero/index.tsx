@@ -26,7 +26,7 @@ const Hero = () => {
       {/* title */}
       <SectionLayout classname="relative h-[calc(100vh-4rem)] flex items-center">
         <div className="space-y-2 font-medium md:space-y-4">
-          <h1 className="text-2xl text-white md:text-4xl">
+          <h1 className="text-2xl text-white drop-shadow-lg md:text-4xl">
             Selamat Datang! 👋
           </h1>
           <SparklesText
@@ -59,9 +59,9 @@ const Hero = () => {
         <Image
           src="/images/hero-image.jpg"
           alt="hero-image"
-          width={800}
-          height={600}
-          className="h-full w-full object-cover object-left"
+          width={3008}
+          height={1668}
+          className="h-full w-full object-cover object-bottom brightness-75"
         />
       </div>
     </section>

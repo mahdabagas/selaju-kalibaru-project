@@ -13,7 +13,7 @@ const AboutKalibiru = () => {
         </Title>
         <div className="mx-auto mt-4 self-center drop-shadow-lg md:mt-0 md:w-1/2">
           <Image
-            src="/images/hero-image-2.jpg"
+            src="/images/about-kalibaru.jpg"
             alt="desa-kalibaru"
             width={600}
             height={400}

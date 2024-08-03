@@ -1,5 +1,7 @@
 import React from "react";
 import { Separator } from "@/components/ui/separator";
+import { FiInstagram } from "react-icons/fi";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -12,7 +14,21 @@ const Footer = () => {
         </div>
         <div className="md:w-64">
           <h3 className="mb-1 text-lg font-medium">Visit Us</h3>
-          <p className="text-sm">Kecamatan Kalibaru, Bayuwangi, Jawa Timur</p>
+          <p className="text-sm">
+            Kecamatan Kalibaru, Kabupaten Banyuwangi, Provinsi Jawa Timur
+          </p>
+        </div>
+        <div className="md:w-64">
+          <h3 className="mb-1 text-lg font-medium">Follow Us</h3>
+          <Link
+            href={"https://www.instagram.com/kalibarucoffeefestival/"}
+            target="_blank"
+          >
+            <div className="flex items-center gap-2">
+              <FiInstagram className="size-5" />
+              <p>@kalibarucoffeefestival</p>
+            </div>
+          </Link>
         </div>
       </div>
       <Separator className="my-4" />

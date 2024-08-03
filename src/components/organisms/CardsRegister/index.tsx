@@ -21,7 +21,7 @@ export default function CardsRegister() {
       <div className="mt-4 grid-cols-3 gap-4 space-y-4 lg:mt-8 lg:grid lg:space-y-0">
         {EVENT_FESTIVAL_KOPI.map((event, index) => (
           <div key={index} className="relative overflow-hidden rounded-xl">
-            <Card className="relative h-full max-h-[45rem] w-full bg-black/70 text-white">
+            <Card className="relative h-full max-h-[45rem] w-full bg-black/65 text-white">
               <CardHeader className="mb-2 space-y-2 pb-2 lg:min-h-[25%]">
                 <CardTitle className="font-semibold">{event.name}</CardTitle>
                 <Separator />
@@ -57,8 +57,8 @@ export default function CardsRegister() {
             </Card>
             {/* Image Background */}
             <Image
-              src="/images/coffee.jpg"
-              alt="/images/coffee.jpg"
+              src={`/images/${event.images}`}
+              alt={event.images}
               width={400}
               height={400}
               className="absolute inset-0 -z-10 h-full w-full object-cover object-center"

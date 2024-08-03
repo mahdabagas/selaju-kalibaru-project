@@ -15,7 +15,7 @@ export default function CoffeeKalibaru() {
           >
             <div className="size-64 self-center overflow-hidden rounded-lg border-primary drop-shadow-lg lg:size-80">
               <Image
-                src={item.image}
+                src={`/images/${item.image}`}
                 className="h-full w-full rounded-lg bg-center object-cover"
                 width={640}
                 height={640}
@@ -28,7 +28,7 @@ export default function CoffeeKalibaru() {
               <h4 className="text-center text-2xl font-medium text-primary lg:text-start">
                 {item.name}
               </h4>
-              <p className="text-justify text-sm md:text-base">
+              <p className="text-justify indent-10 text-sm md:text-base">
                 {item.description}
               </p>
             </div>

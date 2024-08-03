@@ -23,8 +23,8 @@ export default function Wisata({ params }: { params: { slug: string } }) {
       {/* Image Tour */}
       <div className="h-[16rem] w-full md:h-[20rem] lg:h-[30rem]">
         <Image
-          width={1200}
-          height={1000}
+          width={2400}
+          height={1800}
           className="h-full w-full object-cover object-center"
           src={`/images/${tour.image}`}
           alt={`/images/${tour.image}`}
@@ -42,7 +42,9 @@ export default function Wisata({ params }: { params: { slug: string } }) {
           <h5>Alamat</h5>
           <p>: {tour.address}</p>
           <h5>Harga Tiket</h5>
-          <p>: {tour.price}</p>
+          <p>
+            : <span className="font-medium text-primary">{tour.price}</span>
+          </p>
         </div>
         <Separator className="h-[2px] bg-primary" />
         <div className="flex flex-col gap-8 lg:flex-row">

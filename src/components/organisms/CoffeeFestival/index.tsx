@@ -93,8 +93,8 @@ const CoffeeFestival = () => {
           <Image
             src="/images/hero-image.jpg"
             alt="/images/hero-image.jpg"
-            width={600}
-            height={600}
+            width={1200}
+            height={1200}
             className="h-full w-full object-cover object-bottom brightness-50"
           />
         </div>
