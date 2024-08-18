@@ -20,7 +20,7 @@ const CardCoffee = ({
       <div className="h-64 overflow-hidden rounded-md drop-shadow-md md:w-full">
         <Image
           className="h-full w-full object-cover object-center"
-          src={`/images/${coffee.image}`}
+          src={`/images/jejakKopi/${coffee.image}`}
           width={640}
           height={640}
           alt=""

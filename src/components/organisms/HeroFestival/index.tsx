@@ -21,7 +21,7 @@ export default function HeroFestival() {
           <div className="my-auto h-[16rem] grow basis-1/2 self-stretch lg:h-[28rem] lg:basis-1/2">
             <iframe
               className="h-full w-full rounded-2xl drop-shadow-2xl"
-              src="https://www.youtube.com/embed/Fsxf_KsaUX8"
+              src="https://www.youtube.com/embed/B1nubw4w_VY?si=ndkOGV2eUqb3kmJh"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
